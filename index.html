@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nithisha | Full Stack &amp; ML Developer</title>
+<meta name="description" content="Portfolio of Nithisha U. — Full Stack Developer &amp; Machine Learning Enthusiast">
+
+<!-- Google Fonts: Poppins for headings, Inter for body -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div class="loader" id="loader">
+  <div class="loader-ring">
+    <span></span><span></span><span></span>
+  </div>
+  <p class="loader-text">Nithisha<span class="loader-dot">.</span></p>
+</div>
+
+<!-- ============ SCROLL PROGRESS BAR ============ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">Nithisha<span class="dot">.</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+      <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO SECTION ============ -->
+<header class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero-container">
+    <div class="hero-text" data-aos="fade-right">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Nithisha U.</h1>
+      <h2 class="hero-role">
+        I build <span class="typing" id="typingText"></span><span class="cursor-blink">|</span>
+      </h2>
+      <p class="hero-desc">
+        A Full Stack Developer and Machine Learning enthusiast who loves turning ideas into
+        clean, functional, and delightful digital products — from predictive models to
+        pixel-perfect interfaces.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary ripple">
+          <span>View Projects</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="nithi_resume (121).pdf" download class="btn btn-ghost ripple">
+          <span>Download Resume</span>
+          <i class="fa-solid fa-download"></i>
+        </a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/nithishakumar979" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nithisha2/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="nithikumar979@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-image" data-aos="fade-left">
+      <div class="image-glow"></div>
+      <div class="image-ring"></div>
+      <div class="image-frame floating">
+        <img src="/images/profile.jpg" alt="Nithisha U. profile photo">
+      </div>
+      <div class="badge-float badge-1"><i class="fa-solid fa-code"></i><span>Full Stack</span></div>
+      <div class="badge-float badge-2"><i class="fa-solid fa-brain"></i><span>ML / AI</span></div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ ABOUT SECTION ============ -->
+<section class="section about" id="about">
+  <div class="section-container">
+    <p class="section-eyebrow" data-aos="fade-up">About Me</p>
+    <h2 class="section-title" data-aos="fade-up">Get to know me</h2>
+
+    <div class="about-grid">
+      <div class="about-content" data-aos="fade-right">
+        <p class="about-lead">
+          I'm a passionate developer who enjoys building things that live at the intersection of
+          <strong>software engineering</strong> and <strong>machine learning</strong>. I care about
+          clean architecture, thoughtful UI, and models that actually solve real problems.
+        </p>
+
+        <div class="about-cards">
+          <div class="info-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <h4>Education</h4>
+              <p>B.E in Computer Science Engineering</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-bullseye"></i>
+            <div>
+              <h4>Career Objective</h4>
+              <p>Software Engineering roles with a focus on scalable, ML-powered products</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-bolt"></i>
+            <div>
+              <h4>Strengths</h4>
+              <p>Problem solving, DSA, fast learner, clean code, ownership mindset</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-stats" data-aos="fade-left">
+        <div class="stat-card">
+          <h3 class="counter" data-target="9">0</h3>
+          <p>Projects Built</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="counter" data-target="2">0</h3>
+          <p>Internships</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="counter" data-target="6">0</h3>
+          <p>Certifications</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="counter" data-target="2026">0</h3>
+          <p>Graduation Year</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS SECTION ============ -->
+<section class="section skills" id="skills">
+  <div class="section-container">
+    <p class="section-eyebrow" data-aos="fade-up">What I Know</p>
+    <h2 class="section-title" data-aos="fade-up">Skills &amp; Technologies</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-group" data-aos="fade-up">
+        <h3><i class="fa-solid fa-display"></i> Frontend</h3>
+        <div class="skill-cards">
+          <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+          <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+          <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+          <div class="skill-card"><i class="fa-brands fa-react"></i><span>React</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group" data-aos="fade-up">
+        <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+        <div class="skill-cards">
+          <div class="skill-card"><i class="fa-brands fa-java"></i><span>Java</span></div>
+          <div class="skill-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+          <div class="skill-card"><i class="fa-solid fa-c"></i><span>C</span></div>
+          <div class="skill-card"><i class="fa-solid fa-terminal"></i><span>DSA</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group" data-aos="fade-up">
+        <h3><i class="fa-solid fa-database"></i> Databases</h3>
+        <div class="skill-cards">
+          <div class="skill-card"><i class="fa-solid fa-leaf"></i><span>MongoDB</span></div>
+          <div class="skill-card"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+          <div class="skill-card"><i class="fa-solid fa-server"></i><span>Firebase</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group" data-aos="fade-up">
+        <h3><i class="fa-solid fa-toolbox"></i> Tools &amp; Technologies</h3>
+        <div class="skill-cards">
+          <div class="skill-card"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+          <div class="skill-card"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+          <div class="skill-card"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+          <div class="skill-card"><i class="fa-solid fa-brain"></i><span>ML / Bayesian Nets</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS SECTION ============ -->
+<section class="section projects" id="projects">
+  <div class="section-container">
+    <p class="section-eyebrow" data-aos="fade-up">My Work</p>
+    <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Project cards are injected by script.js from a data array -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES SECTION ============ -->
+<section class="section services" id="services">
+  <div class="section-container">
+    <p class="section-eyebrow" data-aos="fade-up">How I Can Help</p>
+    <h2 class="section-title" data-aos="fade-up">Services</h2>
+
+    <div class="services-grid">
+      <div class="service-card" data-aos="fade-up">
+        <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+        <h3>Web Design</h3>
+        <p>Clean, modern, and user-focused designs that balance aesthetics with usability.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up">
+        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <h3>Frontend Development</h3>
+        <p>Pixel-perfect, performant interfaces built with modern HTML, CSS and JavaScript.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up">
+        <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+        <h3>Responsive UI Development</h3>
+        <p>Layouts that adapt beautifully across desktop, tablet, and mobile devices.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up">
+        <div class="service-icon"><i class="fa-brands fa-java"></i></div>
+        <h3>Java Applications</h3>
+        <p>Robust, well-structured Java applications backed by strong DSA fundamentals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS SECTION ============ -->
+<section class="section achievements" id="achievements">
+  <div class="section-container">
+    <p class="section-eyebrow" data-aos="fade-up">Recognition</p>
+    <h2 class="section-title" data-aos="fade-up">Achievements &amp; Certifications</h2>
+
+    <div class="achievements-grid">
+      <div class="achieve-card" data-aos="fade-up">
+        <i class="fa-solid fa-certificate"></i>
+        <h4>Java Programming Certification</h4>
+        <p>Completed an advanced certification covering core &amp; DSA in Java.</p>
+      </div>
+      <div class="achieve-card" data-aos="fade-up">
+        <i class="fa-solid fa-briefcase"></i>
+        <h4>Software Development Internship</h4>
+        <p>Hands-on experience building full-stack features for a live product.</p>
+      </div>
+      <div class="achieve-card" data-aos="fade-up">
+        <i class="fa-solid fa-trophy"></i>
+        <h4>Coding Contest Achiever</h4>
+        <p>Ranked among top performers in college-level coding competitions.</p>
+      </div>
+      <div class="achieve-card" data-aos="fade-up">
+        <i class="fa-solid fa-robot"></i>
+        <h4>Machine Learning Certification</h4>
+        <p>Certified in ML fundamentals, predictive analytics &amp; Bayesian networks.</p>
+      </div>
+      <div class="achieve-card" data-aos="fade-up">
+        <i class="fa-solid fa-users"></i>
+        <h4>Hackathon Participant</h4>
+        <p>Built and pitched a working prototype within a 24-hour hackathon.</p>
+      </div>
+      <div class="achieve-card" data-aos="fade-up">
+        <i class="fa-solid fa-star"></i>
+        <h4>Academic Excellence Award</h4>
+        <p>Recognized for consistent top academic performance in engineering.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT SECTION ============ -->
+<section class="section contact" id="contact">
+  <div class="section-container">
+    <p class="section-eyebrow" data-aos="fade-up">Get In Touch</p>
+    <h2 class="section-title" data-aos="fade-up">Let's Work Together</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right">
+        <p class="contact-lead">
+          Have an opportunity, project, or just want to say hi? My inbox is always open.
+        </p>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div><h4>Email</h4><p>nithisha.dev@example.com</p></div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div><h4>Phone</h4><p>+91 98765 43210</p></div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><h4>Location</h4><p>Bengaluru, India</p></div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <div><h4>GitHub</h4><p>github.com/nithisha</p></div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <div><h4>LinkedIn</h4><p>linkedin.com/in/nithisha</p></div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-aos="fade-left" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder=" " autocomplete="off">
+            <label for="name">Your Name</label>
+            <span class="error-msg" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder=" " autocomplete="off">
+            <label for="email">Your Email</label>
+            <span class="error-msg" id="emailError"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" name="subject" placeholder=" " autocomplete="off">
+          <label for="subject">Subject</label>
+          <span class="error-msg" id="subjectError"></span>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder=" "></textarea>
+          <label for="message">Your Message</label>
+          <span class="error-msg" id="messageError"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary ripple full-width">
+          <span>Send Message</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+        <div class="form-success" id="formSuccess">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Your message has been sent successfully!</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo">Nithisha<span class="dot">.</span></a>
+      <p>Full Stack Developer &amp; Machine Learning Enthusiast, building thoughtful digital products.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-socials">
+      <h4>Follow Me</h4>
+      <div class="social-icons">
+        <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="mailto:nithisha.dev@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Nithisha R. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
